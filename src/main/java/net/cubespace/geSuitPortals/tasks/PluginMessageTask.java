@@ -20,7 +20,7 @@ public class PluginMessageTask extends BukkitRunnable {
         if (onlinePlayers.isEmpty()) {
             geSuitPortals.INSTANCE.getLogger().info("Tried to send a pluginMessage with an empty server. Cancelling.");
         } else {
-            onlinePlayers.iterator().next().sendPluginMessage(geSuitPortals.INSTANCE, "geSuitBans", bytes.toByteArray());
+            onlinePlayers.iterator().next().sendPluginMessage(geSuitPortals.INSTANCE, "geSuitPortals", bytes.toByteArray());
         }
     }
 }
